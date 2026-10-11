@@ -171,6 +171,7 @@ required_files=(
   "community.html"
   "community/paths/childrens-classes.html"
   "community/paths/devotional-gatherings.html"
+  "community/paths/study-circles.html"
   "data/community/index.json"
   "robots.txt"
   "sitemap.xml"
