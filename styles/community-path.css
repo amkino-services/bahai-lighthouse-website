@@ -3650,3 +3650,66 @@ figcaption a {
     white-space: normal;
   }
 }
+
+
+/* =========================================================
+   BWNS documentary photograph attribution — shared standard
+   ========================================================= */
+
+.bwns-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.bwns-photo > img {
+  display: block;
+  width: 100%;
+}
+
+.bwns-photo > figcaption {
+  position: absolute !important;
+  right: 0.55rem !important;
+  bottom: 0.55rem !important;
+  left: auto !important;
+
+  width: auto !important;
+  max-width: calc(100% - 1.1rem) !important;
+  margin: 0 !important;
+  padding: 0.22rem 0.52rem !important;
+
+  background: rgba(0, 0, 0, 0.25) !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+
+  color: #fff !important;
+  font-size: 0.58rem !important;
+  font-weight: 400 !important;
+  line-height: 1.35 !important;
+  text-align: right !important;
+  white-space: nowrap;
+
+  z-index: 3;
+}
+
+.bwns-photo > figcaption a,
+.bwns-photo > figcaption a:visited,
+.bwns-photo > figcaption a:hover,
+.bwns-photo > figcaption a:focus,
+.bwns-photo > figcaption span {
+  color: #fff !important;
+  font-size: inherit !important;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+}
+
+@media (max-width: 600px) {
+  .bwns-photo > figcaption {
+    right: 0.4rem !important;
+    bottom: 0.4rem !important;
+    max-width: calc(100% - 0.8rem) !important;
+    padding: 0.18rem 0.42rem !important;
+    font-size: 0.52rem !important;
+    white-space: normal;
+  }
+}
