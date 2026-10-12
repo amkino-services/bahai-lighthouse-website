@@ -3397,3 +3397,34 @@ figcaption a {
   width: 100%;
   min-height: 0;
 }
+
+/* Social action — text-only evidence cards span the full grid */
+.social-action-experiences-page
+.sa-evidence-grid
+.sa-evidence-card.sa-evidence-card--text-only {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.social-action-experiences-page
+.sa-evidence-card.sa-evidence-card--text-only
+.sa-evidence-card-top {
+  width: 100%;
+  min-height: auto;
+  padding: 2rem;
+}
+
+.social-action-experiences-page
+.sa-evidence-card.sa-evidence-card--text-only
+.sa-evidence-card-top > * {
+  max-width: 850px;
+  margin-inline: auto;
+}
+
+@media (max-width: 760px) {
+  .social-action-experiences-page
+  .sa-evidence-card.sa-evidence-card--text-only
+  .sa-evidence-card-top {
+    padding: 1.4rem;
+  }
+}
