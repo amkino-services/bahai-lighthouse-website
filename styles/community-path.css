@@ -3829,3 +3829,25 @@ figcaption a {
     width: 78px;
   }
 }
+
+/* Study Circles — centralized source reference */
+.study-credits-link {
+  margin: 1.5rem 0 0;
+  color: #69757a;
+  font-size: 0.88rem;
+  line-height: 1.9;
+  text-align: right;
+}
+
+.study-credits-link a {
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.study-credits-link a:hover,
+.study-credits-link a:focus-visible {
+  color: var(--teal-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
