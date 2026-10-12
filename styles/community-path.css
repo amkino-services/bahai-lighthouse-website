@@ -3456,3 +3456,33 @@ figcaption a {
     height: 240px;
   }
 }
+
+/* Social action evidence — consistent cropped photographs */
+.social-action-experiences-page
+.sa-evidence-card
+.social-action-documentary-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.social-action-experiences-page
+.sa-evidence-card
+.social-action-documentary-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Keep the attribution outside the cropped photograph */
+.social-action-experiences-page
+.sa-evidence-card
+.social-action-documentary-photo figcaption {
+  width: 100%;
+  margin: 0;
+  padding: .45rem .75rem;
+  box-sizing: border-box;
+}
