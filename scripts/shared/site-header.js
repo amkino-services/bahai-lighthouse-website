@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <a href="/">الرئيسية</a>
 
-        <a href="index.html#purpose">هدف المنارة البهائية</a>
+        <a href="/#purpose">هدف المنارة البهائية</a>
 
         <div class="nav-dropdown">
 
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           <div class="nav-dropdown-menu">
 
-            <a href="prayers.html">
+            <a href="/prayers">
               <span>الأدعية والمناجاة</span>
               <small class="available-label">متاح</small>
             </a>
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <small>قريباً</small>
             </span>
 
-            <a href="calendar.html">
+            <a href="/calendar">
               <span>المناسبات والأيام المباركة</span>
               <small class="available-label">متاح</small>
             </a>
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <small class="available-label">متاح</small>
             </a>
 
-            <a href="tools.html">
+            <a href="/tools">
               <span>تطبيقات المنارة</span>
               <small>متاح</small>
             </a>
@@ -90,9 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
 
-        <a href="index.html#community">للزوار</a>
+        <a href="/#community">للزوار</a>
 
-        <a href="index.html#about">حول المشروع</a>
+        <a href="/#about">حول المشروع</a>
 
       </nav>
 
@@ -147,15 +147,15 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 
     const purposeLink = target.querySelector(
-      '.global-nav > a[href="index.html#purpose"]'
+      '.global-nav > a[href="/#purpose"]'
     );
 
     const communityLink = target.querySelector(
-      '.global-nav > a[href="index.html#community"]'
+      '.global-nav > a[href="/#community"]'
     );
 
     const aboutLink = target.querySelector(
-      '.global-nav > a[href="index.html#about"]'
+      '.global-nav > a[href="/#about"]'
     );
 
     const sections = [
@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (currentPage === 'prayers.html') {
     const prayersLink = target.querySelector(
-      '.nav-dropdown-menu a[href="prayers.html"]'
+      '.nav-dropdown-menu a[href="/prayers"]'
     );
 
     if (prayersLink) {
