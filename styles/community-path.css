@@ -3327,3 +3327,73 @@ figcaption a {
 .social-action-documentary-photo img {
   max-height: 260px;
 }
+
+
+/* Social action — photographed card cleanup */
+
+/*
+ * Once a documentary photograph is present, the old visual
+ * field label is redundant. The category remains visible in
+ * the card's text content.
+ */
+.social-action-experiences-page
+.jy-card-media.social-action-card-media:has(.social-action-documentary-photo)
+.social-action-card-field {
+  display: none;
+}
+
+/*
+ * Keep the documentary photograph and its attribution in
+ * normal document flow. Nothing is positioned over either.
+ */
+.social-action-experiences-page
+.jy-card-media.social-action-card-media:has(.social-action-documentary-photo) {
+  display: block;
+  padding: 0;
+}
+
+.social-action-experiences-page
+.jy-card-media.social-action-card-media
+.social-action-documentary-photo {
+  position: static;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.social-action-experiences-page
+.jy-card-media.social-action-card-media
+.social-action-documentary-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.social-action-experiences-page
+.jy-card-media.social-action-card-media
+.social-action-documentary-photo figcaption {
+  position: static;
+  margin: 0;
+  padding: .5rem .75rem;
+  min-height: 0;
+  text-align: right;
+  line-height: 1.6;
+}
+
+/*
+ * Uganda currently has no unique verified photograph.
+ * Don't reserve an empty visual column for it.
+ */
+.social-action-experiences-page
+.sa-evidence-card.sa-evidence-card--text-only {
+  display: block;
+}
+
+.social-action-experiences-page
+.sa-evidence-card.sa-evidence-card--text-only
+.sa-evidence-card-top {
+  width: 100%;
+  min-height: 0;
+}
