@@ -3273,3 +3273,57 @@ figcaption a {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Social action — documentary photographs */
+
+.social-action-experiences-page .social-action-documentary-photo {
+  margin: 0;
+  overflow: hidden;
+}
+
+.social-action-experiences-page .social-action-documentary-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  background: #f4f1e9;
+}
+
+.social-action-experiences-page .social-action-documentary-photo figcaption {
+  padding: .45rem .7rem;
+  font-size: .75rem;
+  line-height: 1.7;
+  color: #59676b;
+  background: #faf8f2;
+}
+
+.social-action-experiences-page .social-action-documentary-photo figcaption a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.social-action-experiences-page .sa-evidence-card-top {
+  padding-top: 0;
+}
+
+.social-action-experiences-page .sa-evidence-card-top
+.social-action-documentary-photo {
+  margin: 0 -1.5rem 1.5rem;
+}
+
+.social-action-experiences-page .jy-card-media.social-action-card-media {
+  overflow: hidden;
+}
+
+.social-action-experiences-page .jy-card-media.social-action-card-media
+.social-action-documentary-photo {
+  width: 100%;
+}
+
+.social-action-experiences-page .jy-card-media.social-action-card-media
+.social-action-documentary-photo img {
+  max-height: 260px;
+}
