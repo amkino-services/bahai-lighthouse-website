@@ -3486,3 +3486,69 @@ figcaption a {
   padding: .45rem .75rem;
   box-sizing: border-box;
 }
+
+/* Social action evidence — photos flush with the card canvas */
+.social-action-experiences-page
+.sa-evidence-card {
+  overflow: hidden;
+}
+
+.social-action-experiences-page
+.sa-evidence-card
+.sa-evidence-card-top {
+  padding: 0;
+}
+
+.social-action-experiences-page
+.sa-evidence-card
+.social-action-documentary-photo {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.social-action-experiences-page
+.sa-evidence-card
+.social-action-documentary-photo img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+  border: 0;
+  border-radius: 0;
+}
+
+/* Attribution belongs below the photo, not inside its crop */
+.social-action-experiences-page
+.sa-evidence-card
+.social-action-documentary-photo figcaption {
+  margin: 0;
+  padding: .45rem 1rem;
+  border: 0;
+}
+
+/* Restore spacing only for the textual content below the image */
+.social-action-experiences-page
+.sa-evidence-card
+.social-action-documentary-photo ~ * {
+  margin-inline: 1.5rem;
+}
+
+@media (max-width: 760px) {
+  .social-action-experiences-page
+  .sa-evidence-card
+  .social-action-documentary-photo img {
+    height: 230px;
+  }
+
+  .social-action-experiences-page
+  .sa-evidence-card
+  .social-action-documentary-photo ~ * {
+    margin-inline: 1.1rem;
+  }
+}
