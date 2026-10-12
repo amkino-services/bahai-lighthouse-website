@@ -3713,3 +3713,52 @@ figcaption a {
     white-space: normal;
   }
 }
+
+/* Public discourse — practical participation */
+.public-discourse-participation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.public-discourse-participation-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.35rem;
+  background: rgba(255, 255, 255, 0.52);
+  border: 1px solid rgba(14, 111, 136, 0.1);
+  border-radius: 16px;
+}
+
+.public-discourse-step {
+  display: grid;
+  place-items: center;
+  flex: 0 0 2.15rem;
+  width: 2.15rem;
+  height: 2.15rem;
+  border-radius: 50%;
+  background: rgba(14, 111, 136, 0.09);
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.public-discourse-participation-card h3 {
+  margin: 0 0 0.45rem;
+}
+
+.public-discourse-participation-card p {
+  margin: 0;
+  line-height: 1.9;
+}
+
+.public-discourse-experiences-link {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 760px) {
+  .public-discourse-participation-grid {
+    grid-template-columns: 1fr;
+  }
+}
