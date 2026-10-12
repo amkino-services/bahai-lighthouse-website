@@ -11883,3 +11883,29 @@ body.huququllah-page .tool-page-hero h1.ruqaa-page-title {
     overflow-wrap: anywhere;
   }
 }
+
+/* Community credits reference */
+.community-credits-link {
+  margin: 3.5rem auto;
+  padding-inline: 1.5rem;
+}
+
+.community-credits-link a,
+.community-credits-link a:visited {
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.community-credits-link a:hover,
+.community-credits-link a:focus {
+  color: var(--teal-dark);
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .community-credits-link {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
