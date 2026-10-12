@@ -11909,3 +11909,20 @@ body.huququllah-page .tool-page-hero h1.ruqaa-page-title {
     margin-bottom: 2.5rem;
   }
 }
+
+/* Community credits link — enforce site teal */
+.community-page .community-credits-link a,
+.community-page .community-credits-link a:visited,
+.community-credits-link a,
+.community-credits-link a:visited {
+  color: #0e6f88 !important;
+  text-decoration: none;
+}
+
+.community-page .community-credits-link a:hover,
+.community-page .community-credits-link a:focus,
+.community-credits-link a:hover,
+.community-credits-link a:focus {
+  color: #0a596d !important;
+  text-decoration: underline;
+}
