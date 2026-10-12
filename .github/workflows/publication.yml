@@ -1,0 +1,60 @@
+name: Publication Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run validation only or deploy to production"
+        required: true
+        type: choice
+        default: validate
+        options:
+          - validate
+          - deploy
+
+permissions:
+  contents: read
+
+concurrency:
+  group: bahai-lighthouse-publication
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Validate publication package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build and run repository security checks
+        run: bash build/build-deploy.sh
+
+      - name: Upload validated deployment package
+        uses: actions/upload-artifact@v4
+        with:
+          name: bahai-lighthouse-deploy
+          path: .deploy
+          if-no-files-found: error
+          retention-days: 7
+
+  deploy:
+    name: Deploy to Cloudflare
+    if: ${{ inputs.mode == 'deploy' }}
+    needs: build
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Rebuild and revalidate package
+        run: bash build/build-deploy.sh
+
+      - name: Deploy validated package
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4"
+          command: deploy
