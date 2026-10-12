@@ -3154,3 +3154,122 @@ figcaption a {
 .public-discourse-experiences-page .path-section-heading h2 {
   font-family: "Aref Ruqaa", "Almarai", serif;
 }
+
+
+/* =========================================================
+   Social action — evidence by field and country
+   ========================================================= */
+
+.social-action-experiences-page .sa-evidence-navigation {
+  padding-bottom: 1rem;
+}
+
+.social-action-experiences-page .sa-evidence-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.5rem;
+}
+
+.social-action-experiences-page .sa-evidence-fields a {
+  display: inline-flex;
+  align-items: center;
+  padding: .7rem 1rem;
+  border: 1px solid rgba(14,111,136,.22);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--teal);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .2s ease, border-color .2s ease;
+}
+
+.social-action-experiences-page .sa-evidence-fields a:hover,
+.social-action-experiences-page .sa-evidence-fields a:focus-visible {
+  background: rgba(14,111,136,.08);
+  border-color: var(--teal);
+}
+
+.social-action-experiences-page .sa-evidence-section {
+  scroll-margin-top: 6rem;
+}
+
+.social-action-experiences-page .sa-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.social-action-experiences-page .sa-evidence-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(14,111,136,.14);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,.035);
+}
+
+.social-action-experiences-page .sa-evidence-card-top {
+  padding: 1.5rem;
+}
+
+.social-action-experiences-page .sa-evidence-card h3 {
+  margin: .6rem 0;
+  font-family: "Aref Ruqaa", "Almarai", serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+}
+
+.social-action-experiences-page .sa-evidence-card p {
+  line-height: 1.9;
+}
+
+.social-action-experiences-page .sa-evidence-card details {
+  margin-top: auto;
+  border-top: 1px solid rgba(14,111,136,.12);
+}
+
+.social-action-experiences-page .sa-evidence-card summary {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.social-action-experiences-page .sa-evidence-card summary:hover {
+  background: rgba(14,111,136,.05);
+}
+
+.social-action-experiences-page .sa-evidence-card-details {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.social-action-experiences-page .sa-evidence-card-details h4 {
+  margin: .6rem 0;
+}
+
+.social-action-experiences-page .sa-evidence-card-details a {
+  display: inline-block;
+  margin-top: .75rem;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.social-action-experiences-page .sa-evidence-note,
+.social-action-experiences-page .sa-evidence-disclaimer {
+  font-size: .9rem;
+  opacity: .85;
+}
+
+.social-action-experiences-page .sa-evidence-disclaimer {
+  margin-top: 1.5rem;
+  line-height: 1.9;
+}
+
+@media (max-width: 760px) {
+  .social-action-experiences-page .sa-evidence-grid {
+    grid-template-columns: 1fr;
+  }
+}
