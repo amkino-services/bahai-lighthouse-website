@@ -179,6 +179,8 @@ required_files=(
   "robots.txt"
   "sitemap.xml"
   "_headers"
+  "community/paths/public-discourse.html"
+  "community/public-discourse-experiences.html"
 )
 
 for file in "${required_files[@]}"; do

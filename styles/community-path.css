@@ -2730,3 +2730,427 @@ figcaption a {
     width: min(100%, 220px);
   }
 }
+
+/* =========================================================
+   Public Discourse
+   ========================================================= */
+
+.public-discourse-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  margin: 1.5rem auto;
+  direction: rtl;
+}
+
+.public-discourse-flow-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid rgba(31, 91, 110, 0.22);
+  border-radius: 8px;
+  background: #fff;
+  color: #07566d;
+  font-size: 0.92rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.public-discourse-flow-arrow {
+  flex: 0 0 auto;
+  color: #07566d;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.public-discourse-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.public-discourse-preview-card {
+  overflow: hidden;
+  border: 1px solid rgba(31, 91, 110, 0.14);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.public-discourse-preview-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.public-discourse-preview-card > div {
+  padding: 1rem 1.1rem 1.15rem;
+}
+
+.public-discourse-preview-card h3 {
+  margin: 0.3rem 0 0;
+}
+
+.public-discourse-photo-credit {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.82rem;
+  opacity: 0.72;
+}
+
+@media (max-width: 760px) {
+  .public-discourse-flow {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .public-discourse-flow-step {
+    width: min(100%, 220px);
+  }
+
+  .public-discourse-flow-arrow {
+    transform: rotate(-90deg);
+  }
+
+  .public-discourse-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   Public Discourse
+   ========================================================= */
+
+.public-discourse-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  margin: 1.5rem auto;
+  direction: rtl;
+}
+
+.public-discourse-flow-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid rgba(31, 91, 110, 0.22);
+  border-radius: 8px;
+  background: #fff;
+  color: #07566d;
+  font-size: 0.92rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.public-discourse-flow-arrow {
+  flex: 0 0 auto;
+  color: #07566d;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.public-discourse-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.public-discourse-preview-card {
+  overflow: hidden;
+  border: 1px solid rgba(31, 91, 110, 0.14);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.public-discourse-preview-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.public-discourse-preview-card > div {
+  padding: 1rem 1.1rem 1.15rem;
+}
+
+.public-discourse-preview-card h3 {
+  margin: 0.3rem 0 0;
+}
+
+.public-discourse-photo-credit {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.82rem;
+  opacity: 0.72;
+}
+
+@media (max-width: 760px) {
+  .public-discourse-flow {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .public-discourse-flow-step {
+    width: min(100%, 220px);
+  }
+
+  .public-discourse-flow-arrow {
+    transform: rotate(-90deg);
+  }
+
+  .public-discourse-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   Resource cards — consistent link color and alignment
+   ========================================================= */
+
+.path-resource-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.path-resource-card > a {
+  margin-top: auto;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.path-resource-card > a:hover,
+.path-resource-card > a:focus-visible {
+  color: var(--teal-dark);
+}
+
+/* =========================================================
+   Public Discourse — Experiences
+   ========================================================= */
+
+.public-discourse-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.public-discourse-experience-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(31, 91, 110, 0.16);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.public-discourse-experience-card figure {
+  margin: 0;
+}
+
+.public-discourse-experience-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.public-discourse-experience-card figcaption {
+  padding: 0.6rem 1rem;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.8;
+}
+
+.public-discourse-experience-content {
+  padding: 1.3rem;
+}
+
+.public-discourse-experience-content h3 {
+  margin: 0.5rem 0 0.8rem;
+}
+
+.public-discourse-experience-content > p {
+  line-height: 2;
+}
+
+.public-discourse-experience-card details {
+  margin-top: 1.2rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+.public-discourse-experience-card summary {
+  cursor: pointer;
+  color: var(--teal);
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.public-discourse-experience-card summary:hover,
+.public-discourse-experience-card summary:focus-visible {
+  color: var(--teal-dark);
+}
+
+.public-discourse-experience-details {
+  padding-top: 1rem;
+}
+
+.public-discourse-experience-details h4 {
+  margin: 1.1rem 0 0.4rem;
+  color: var(--ink);
+}
+
+.public-discourse-experience-details p {
+  margin: 0;
+  line-height: 2;
+}
+
+.public-discourse-experience-details > a {
+  display: inline-block;
+  margin-top: 1.4rem;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.public-discourse-experience-details > a:hover,
+.public-discourse-experience-details > a:focus-visible {
+  color: var(--teal-dark);
+}
+
+.public-discourse-experience-credit {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1.9;
+}
+
+@media (max-width: 760px) {
+  .public-discourse-experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   Public Discourse — Experiences
+   ========================================================= */
+
+.public-discourse-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.public-discourse-experience-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(31, 91, 110, 0.16);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.public-discourse-experience-card figure {
+  margin: 0;
+}
+
+.public-discourse-experience-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.public-discourse-experience-card figcaption {
+  padding: 0.6rem 1rem;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.8;
+}
+
+.public-discourse-experience-content {
+  padding: 1.3rem;
+}
+
+.public-discourse-experience-content h3 {
+  margin: 0.5rem 0 0.8rem;
+}
+
+.public-discourse-experience-content > p {
+  line-height: 2;
+}
+
+.public-discourse-experience-card details {
+  margin-top: 1.2rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+.public-discourse-experience-card summary {
+  cursor: pointer;
+  color: var(--teal);
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.public-discourse-experience-card summary:hover,
+.public-discourse-experience-card summary:focus-visible {
+  color: var(--teal-dark);
+}
+
+.public-discourse-experience-details {
+  padding-top: 1rem;
+}
+
+.public-discourse-experience-details h4 {
+  margin: 1.1rem 0 0.4rem;
+  color: var(--ink);
+}
+
+.public-discourse-experience-details p {
+  margin: 0;
+  line-height: 2;
+}
+
+.public-discourse-experience-details > a {
+  display: inline-block;
+  margin-top: 1.4rem;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.public-discourse-experience-details > a:hover,
+.public-discourse-experience-details > a:focus-visible {
+  color: var(--teal-dark);
+}
+
+.public-discourse-experience-credit {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1.9;
+}
+
+@media (max-width: 760px) {
+  .public-discourse-experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Public Discourse experiences — major titles in Aref Ruqaa */
+.public-discourse-experiences-page .path-hero h1,
+.public-discourse-experiences-page .path-section-heading h2 {
+  font-family: "Aref Ruqaa", "Almarai", serif;
+}
+
+/* Public Discourse experiences — major titles in Aref Ruqaa */
+.public-discourse-experiences-page .path-hero h1,
+.public-discourse-experiences-page .path-section-heading h2 {
+  font-family: "Aref Ruqaa", "Almarai", serif;
+}
