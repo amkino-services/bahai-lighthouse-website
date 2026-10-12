@@ -2657,3 +2657,76 @@ figcaption a {
   font-size: 1.35rem;
   line-height: 1.8;
 }
+
+/* Social Action — simple process flow */
+.social-action-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 2rem auto;
+  direction: rtl;
+}
+
+.social-action-flow-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.65rem 1.25rem;
+  border: 1px solid rgba(31, 91, 110, 0.22);
+  border-radius: 10px;
+  background: #fff;
+  color: #07566d;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.social-action-flow-arrow {
+  flex: 0 0 auto;
+  color: #07566d;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+@media (max-width: 760px) {
+  .social-action-flow {
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  .social-action-flow-step {
+    width: min(100%, 260px);
+  }
+
+  .social-action-flow-arrow {
+    transform: rotate(-90deg);
+  }
+}
+
+/* Social Action — compact process flow */
+.social-action-flow {
+  gap: 0.55rem;
+  margin: 1.5rem auto;
+}
+
+.social-action-flow-step {
+  min-height: 40px;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
+}
+
+.social-action-flow-arrow {
+  font-size: 1rem;
+}
+
+@media (max-width: 760px) {
+  .social-action-flow {
+    gap: 0.4rem;
+  }
+
+  .social-action-flow-step {
+    width: min(100%, 220px);
+  }
+}
