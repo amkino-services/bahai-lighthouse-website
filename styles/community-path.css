@@ -3355,7 +3355,7 @@ figcaption a {
 .social-action-experiences-page
 .jy-card-media.social-action-card-media
 .social-action-documentary-photo {
-  position: static;
+  position: relative;
   width: 100%;
   height: auto;
   margin: 0;
