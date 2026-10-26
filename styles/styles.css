@@ -7376,220 +7376,80 @@ body.sunset-times-page .sunset-times-section {
    Homepage newsletter
    ========================================================= */
 
-.homepage-newsletter {
-  padding: 56px 24px;
-}
-
+.homepage-newsletter { padding: 56px 24px; }
 .homepage-newsletter-inner {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 42px 48px;
-  border-radius: 18px;
-  background: var(--teal);
-  color: #fff;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, .9fr);
-  align-items: start;
-  gap: 56px;
+  max-width: 1180px; margin: 0 auto; padding: 42px 48px;
+  border-radius: 18px; background: var(--teal); color: #fff;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, .9fr);
+  align-items: start; gap: 48px;
 }
-
-.homepage-newsletter-copy {
-  text-align: right;
-}
-
+.homepage-newsletter-copy { text-align: right; min-width: 0; }
 .homepage-newsletter-eyebrow {
-  display: inline-block;
-  margin-bottom: 8px;
-  color: var(--sky);
-  font-family: "Almarai", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
+  display: inline-block; margin-bottom: 8px; color: var(--sky);
+  font-family: "Almarai", sans-serif; font-size: 13px; font-weight: 700;
 }
-
 .homepage-newsletter-copy h2 {
-  margin: 0 0 12px;
-  color: #fff;
+  margin: 0 0 12px; color: #fff;
   font-family: "Aref Ruqaa", "Noto Sans Arabic", serif;
-  font-size: clamp(28px, 3vw, 40px);
-  line-height: 1.35;
+  font-size: clamp(28px, 3vw, 40px); line-height: 1.5;
 }
-
 .homepage-newsletter-copy p {
-  margin: 0;
-  max-width: 620px;
-  color: #d6edf2;
-  font-family: "Almarai", sans-serif;
-  font-size: 15px;
-  line-height: 2;
+  margin: 0; max-width: 620px; color: #d6edf2;
+  font-family: "Almarai", sans-serif; font-size: 15px; line-height: 2;
 }
-
 .homepage-newsletter-form {
-  position: relative;
-  direction: rtl;
-  font-family: "Almarai", sans-serif;
+  position: relative; min-width: 0; direction: rtl; font-family: "Almarai", sans-serif;
 }
-
 .homepage-newsletter-form > label {
-  display: block;
-  margin-bottom: 8px;
-  color: #fff;
-  font-family: "Almarai", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
+  display: block; margin: 0 0 10px; color: #fff; font-size: 13px; font-weight: 700;
 }
-
 .homepage-newsletter-fields {
-  position: relative;
-  display: flex;
-  align-items: stretch;
-  direction: rtl;
-  overflow: visible;
-  border-radius: 10px;
-  background: #fff;
+  display: flex; align-items: stretch; gap: 10px; direction: rtl;
 }
-
 .homepage-newsletter-fields input {
-  min-width: 0;
-  height: 58px;
-  flex: 1;
-  box-sizing: border-box;
-  border: 0;
-  outline: 0;
-  padding: 20px 20px 10px;
-  background: #fff;
-  color: var(--ink);
-  font-family: "Almarai", sans-serif;
-  font-size: 14px;
-  border-radius: 0 10px 10px 0;
+  flex: 1; width: 100%; min-width: 0; height: 56px; box-sizing: border-box;
+  border: 1px solid transparent; border-radius: 10px; padding: 0 16px;
+  background: #fff; color: var(--ink); font-family: "Almarai", sans-serif;
+  font-size: 16px; line-height: normal; text-align: right;
 }
-
-
-.homepage-newsletter-placeholder {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  color: #929b9f;
-  font-family: "Almarai", sans-serif;
-  font-size: 11px;
-  line-height: 1.8;
-  pointer-events: none;
-  white-space: nowrap;
+.homepage-newsletter-fields input::placeholder { color: #68797e; opacity: 1; font-size: 13px; }
+.homepage-newsletter-fields input:focus-visible {
+  outline: 3px solid var(--gold); outline-offset: 3px;
 }
-
-.homepage-newsletter-fields input:focus + .homepage-newsletter-placeholder,
-.homepage-newsletter-fields input:not(:placeholder-shown) + .homepage-newsletter-placeholder {
-  display: none;
-}
-
+.homepage-newsletter-placeholder { display: none; }
 .homepage-newsletter-fields button {
-  flex: 0 0 auto;
-  border: 0;
-  padding: 14px 24px;
-  background: var(--gold);
-  color: #fff;
-  cursor: pointer;
-  font-family: "Almarai", sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-  border-radius: 10px 0 0 10px;
-  transition:
-    background-color .35s ease,
-    transform .35s ease,
-    box-shadow .35s ease;
+  flex: 0 0 auto; min-height: 56px; border: 0; border-radius: 10px;
+  padding: 12px 24px; background: var(--gold); color: #172126;
+  cursor: pointer; font-family: "Almarai", sans-serif; font-size: 14px;
+  font-weight: 800; transition: background-color .2s ease;
 }
-
-.homepage-newsletter-fields button:hover {
-  background: rgba(221, 169, 64, .78);
-  color: #fff;
-  filter: none;
+.homepage-newsletter-fields button:hover { background: #edbd61; filter: none; }
+.homepage-newsletter-fields button:focus-visible {
+  outline: 3px solid #fff; outline-offset: 3px;
 }
-
-.homepage-newsletter-captcha {
-  margin-top: 12px;
-  direction: ltr;
-}
-
-.homepage-newsletter-note {
-  margin: 8px 2px 0;
-  color: #d6edf2;
-  font-family: "Almarai", sans-serif;
-  font-size: 11px;
-}
-
+.homepage-newsletter-captcha { margin-top: 18px; direction: ltr; }
+.homepage-newsletter-note { margin: 12px 0 0; color: #d6edf2; font-size: 12px; line-height: 1.8; }
 /* Brevo anti-spam field */
 .homepage-newsletter-form .input--hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
+  position: absolute !important; width: 1px !important; height: 1px !important;
+  padding: 0 !important; margin: -1px !important; overflow: hidden !important;
+  clip: rect(0,0,0,0) !important; white-space: nowrap !important;
+  border: 0 !important; opacity: 0 !important; pointer-events: none !important;
 }
-
 @media (max-width: 800px) {
-  .homepage-newsletter {
-    padding: 32px 16px;
-  }
-
-  .homepage-newsletter-inner {
-    padding: 30px 24px;
-    grid-template-columns: 1fr;
-    gap: 26px;
-  }
+  .homepage-newsletter { padding: 32px 16px; }
+  .homepage-newsletter-inner { padding: 30px 24px; grid-template-columns: 1fr; gap: 26px; }
 }
-
 @media (max-width: 520px) {
-  .homepage-newsletter-fields {
-    display: grid;
-  }
-
-  .homepage-newsletter-fields button {
-    width: 100%;
-  }
+  .homepage-newsletter-fields { flex-direction: column; gap: 12px; }
+  .homepage-newsletter-fields input { flex: auto; }
+  .homepage-newsletter-fields button { width: 100%; }
 }
-
-/* Newsletter desktop alignment */
-@media (min-width: 801px) {
-  .homepage-newsletter-inner {
-    padding-bottom: 42px;
-  }
-
-  .homepage-newsletter-form {
-    transform: none;
-  }
-
-  .homepage-newsletter-captcha {
-    margin-top: 18px;
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-
-@media (min-width: 801px) {
-  .homepage-newsletter-eyebrow,
-  .homepage-newsletter-form > label {
-    margin: 0 0 8px;
-    line-height: 1.8;
-  }
-
-  .homepage-newsletter-copy,
-  .homepage-newsletter-form {
-    align-self: start;
-  }
-
-  .homepage-newsletter-captcha {
-    margin-top: 18px;
-    display: flex;
-    justify-content: flex-end;
-  }
+@media (max-width: 380px) {
+  .homepage-newsletter { padding-inline: 6px; }
+  .homepage-newsletter-inner { padding-inline: 4px; }
+  .homepage-newsletter-copy, .homepage-newsletter-form > label,
+  .homepage-newsletter-fields, .homepage-newsletter-note { margin-inline: 12px; }
 }
 
 /* Huququllah — unified lower information cards */
