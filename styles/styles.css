@@ -11786,3 +11786,62 @@ body.huququllah-page .tool-page-hero h1.ruqaa-page-title {
   color: #0a596d !important;
   text-decoration: underline;
 }
+
+/* ===== Privacy page subsection headings ===== */
+
+.privacy-page .privacy-card > h3 {
+  font-family: "Almarai","Noto Sans Arabic",sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 22px 0 6px;
+}
+
+/* ===== END Privacy page subsection headings ===== */
+
+/* ===== Privacy main section headings size ===== */
+
+.privacy-page .privacy-card > h2 {
+  font-size: 32px;
+  line-height: 1.5;
+  margin: 36px 0 10px;
+}
+
+/* ===== END Privacy main section headings size ===== */
+
+/* ===== Privacy main H2 headings ===== */
+
+.privacy-page .privacy-card > h2 {
+  font-size: 32px;
+  line-height: 1.5;
+  margin: 36px 0 10px;
+}
+
+/* ===== END Privacy main H2 headings ===== */
+
+/* ===== Privacy H4 feature headings ===== */
+
+.privacy-page .privacy-card > h4 {
+  font-family: "Almarai","Noto Sans Arabic",sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 22px 0 6px;
+}
+
+/* ===== END Privacy H4 feature headings ===== */
+
+/* ===== Privacy H6 feature headings ===== */
+
+.privacy-page .privacy-card > h6 {
+  font-family: "Almarai","Noto Sans Arabic",sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 22px 0 6px;
+}
+
+/* ===== END Privacy H6 feature headings ===== */
