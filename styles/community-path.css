@@ -3852,3 +3852,15 @@ figcaption a {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* Social action — consistent spacing in expanded evidence text */
+.social-action-experiences-page .sa-evidence-details-body {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.social-action-experiences-page .sa-evidence-details-body > a {
+  display: inline-block;
+  margin-top: .75rem;
+  color: var(--teal);
+  font-weight: 700;
+}
